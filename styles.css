@@ -537,14 +537,18 @@ button[type="submit"]:hover {
 }
 
 #projects .button {
-    display: inline-block;
-    margin: 1rem 0 0 1rem;
-    padding: 0.6rem 1.2rem;
+    display: block;
+    /* allows centering via margin */
+    width: fit-content;
+    /* button width matches content */
+    margin: 1rem auto;
+    /* auto centers horizontally */
+    padding: 0.4rem 1rem;
+    /* slightly smaller padding */
     font-size: 1rem;
     font-weight: 600;
     color: white;
     background-color: #1f2937;
-    /* Dark blue-gray */
     border: none;
     border-radius: 8px;
     text-decoration: none;
@@ -554,7 +558,6 @@ button[type="submit"]:hover {
 
 #projects .button:hover {
     background-color: #111827;
-    /* Slightly darker */
     transform: translateY(-2px);
 }
 
